@@ -119,8 +119,12 @@ Para testar a máscara:
 ## Troubleshooting
 
 ### Máscara não aparece
-- Verifique se `react-input-mask` está instalado: `npm list react-input-mask`
-- Reinstale se necessário: `npm install react-input-mask`
+- Verifique se `react-imask` está instalado: `npm list react-imask`
+- Reinstale se necessário: `npm install react-imask`
+
+### Erro "findDOMNode is not a function"
+- Este erro ocorria com `react-input-mask` no React 19
+- Solução: Usar `react-imask` que é compatível com React 19+
 
 ### Validação não funciona
 - Verifique se o regex no schema corresponde ao formato da máscara
