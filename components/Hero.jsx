@@ -1,5 +1,6 @@
 import { Phone, MessageCircle } from 'lucide-react';
 import { Button } from './ui/Button';
+import Image from 'next/image';
 
 export function Hero() {
   return (
@@ -57,22 +58,19 @@ export function Hero() {
 
           {/* Right Content - Image Placeholder */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-emerald-100 shadow-2xl overflow-hidden">
+            <div className="aspect-square rounded-3xl bg-gradient-to-br from-blue-100 to-emerald-100 shadow-2xl overflow-hidden">
               <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">✨</div>
-                  <p className="text-xl font-semibold text-gray-700">
-                    Professional Cleaning Services
-                  </p>
-                  <p className="text-gray-600 mt-2">
-                    Trusted by families across South Florida
-                  </p>
-                </div>
+                <Image 
+                  src="/hero-logo.jpeg"
+                  alt="Professional cleaning service"
+                  fill
+                  className="w-full h-full object-cover rounded-3xl"
+                />
               </div>
             </div>
             
             {/* Floating Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100">
+            <div className="absolute max-md:hidden -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
                   <span className="text-2xl">🏆</span>

@@ -136,25 +136,28 @@ Para testar a máscara:
 
 ## Recursos Adicionais
 
-- [React Input Mask - Documentação](https://github.com/sanniassin/react-input-mask)
+- [React IMask - Documentação](https://imask.js.org/guide.html)
+- [React IMask - GitHub](https://github.com/uNmAnNeR/imaskjs/tree/master/packages/react-imask)
 - [React Hook Form - Controller](https://react-hook-form.com/docs/usecontroller/controller)
 - [Zod - String Validation](https://zod.dev/?id=strings)
 
 ## Formatos Comuns de Máscaras
 
 ```javascript
-// EUA
-"(999) 999-9999"
+// EUA (react-imask)
+"(000) 000-0000"
 
-// Brasil
-"(99) 99999-9999"
+// Brasil (react-imask)
+"(00) 00000-0000"
 
-// Internacional
-"+99 (999) 999-9999"
+// Internacional (react-imask)
+"+00 (000) 000-0000"
 
 // Apenas números (sem formatação visual)
-"99999999999"
+"00000000000"
 ```
+
+**Importante**: No react-imask, use `0` para dígitos numéricos obrigatórios.
 
 ## Notas
 
