@@ -39,16 +39,22 @@ export function Contact() {
     setSubmitStatus(null);
 
     try {
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
-      console.log('Form data:', data);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setSubmitStatus('success');
       reset();
-      
-      // In a real application, you would send this data to your backend
-      // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) });
     } catch (error) {
+      console.error('Error sending message:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
