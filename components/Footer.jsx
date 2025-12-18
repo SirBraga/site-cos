@@ -31,7 +31,7 @@ export function Footer() {
                 <MessageCircle className="w-5 h-5 text-white" />
               </a>
               <a
-                href="mailto:contact@coscleaningandorganizationsolutions.com"
+                href="mailto:cleaningorganizationsolutions@gmail.com"
                 className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Email us"
               >
@@ -80,10 +80,10 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <a
-                  href="mailto:contact@coscleaningandorganizationsolutions.com"
+                  href="mailto:cleaningorganizationsolutions@gmail.com"
                   className="hover:text-white transition-colors break-all"
                 >
-                  contact@coscleaningandorganizationsolutions.com
+                  cleaningorganizationsolutions@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
